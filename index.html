@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Microstrip Line Calculator By Truong Viet Hoang</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<center><h2>Microstrip Line Calculator</h2></center>
+	<center><img border="0" src="http://www.emtalk.com/images/calculator/ms_model.jpg"></center>
+	<br>
+	<center><table>
+		<tr><th colspan="3">Substrate Parameters</th></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td>Dielectric Constant (&#949;<sub>r</sub>):</td>
+			<td><input type="text" size="10" id="er" value="" /></td></tr>
+		<tr><td>Dielectric Height (h):</td>
+			<td><input type="text" size="10" id="h" value="" /></td>
+			<td>
+				<select id="h_unit">
+				<option value="mm" "">mm</option>	
+				<option value="mil" "">mil</option>						
+				</select>
+			</td>
+		</tr>
+		<tr><td>Frequency:</td>
+			<td><input type="text" size="10" id="f" value="" /></td>
+			<td>GHz</td>
+		</tr>
+	</table></center>				
+	<tr><td>
+		<table align="center">
+		<tr><td>
+			<table>
+				<tr><th colspan="3"><b>Electrical Parameters</b></th></tr>
+				<tr><td>&nbsp;</td></tr>
+				<tr><td>Zo:</td>
+					<td><input type="text" size="12" id="zo" value="" /></td>
+					<td>&#937;</td>
+				</tr>
+				<tr><td>Elec. Length:</td>
+					<td><input type="text" size="12" id="EL" value="" /></td>
+					<td>deg</td>
+				</tr>
+			</table>
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;<br><br>
+			<center><input type="submit" id="syn" value="Synthesize" style="border-color: red; border-width: 2px;"/></center>
+			<br>
+			<center><input type="submit" id="anal" value="Analyze" style="border-color: green; border-width: 2px;"/></center>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<table>
+					<tr><th colspan="3"><b>Physical Parameters</b></th></tr>
+					<tr><td>&nbsp;</td></tr>
+					<tr><td>Width (W):</td>
+						<td><input type="text" size="12" id="W" /></td>
+						<td>
+							<select name="W_units_list">
+							<option value="mm" "">mm</option>	
+							<option value="mil" "">mil</option>						
+							</select>
+						</td>
+					</tr>
+					<tr><td>Length (L):</td>
+						<td><input type="text" size="12" id="L" value="" /></td>
+						<td>
+							<select name="L_units_list">
+							<option value="mm" "">mm</option>	
+							<option value="mil" "">mil</option>
+							</select>
+						</td>
+					</tr>
+				</table>		
+			</td>
+		</tr>
+		</table>
+	</td></tr>
+	<script src="site.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
